@@ -46,8 +46,8 @@ void flowField::set_forces(ofVec2f target, float max_noise_angle, float noise_sc
 
 ofVec2f flowField::lookup_force(ofVec2f position) {
     
-    int nearest_row = floor(position.y / resolution);
-    int nearest_col = floor(position.x / resolution);
+    int nearest_row = ofClamp(floor(position.y / resolution), 0, num_rows-1);
+    int nearest_col = ofClamp(floor(position.x / resolution), 0, num_cols-1);
     
     return field_array[nearest_row][nearest_col];
     

@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "flowField.h"
+#include "traveller.h"
 
 class ofApp : public ofBaseApp{
 
@@ -23,4 +24,8 @@ class ofApp : public ofBaseApp{
         void gotMessage(ofMessage msg);
         
     flowField flowField;
+    vector<traveller> travellers;
+    
+    // Screenshots
+    ofImage img;
 };

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC1A554F25297486009E7A89 /* flowField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC1A554D25297486009E7A89 /* flowField.cpp */; };
+		BC1A5552252ACCBE009E7A89 /* traveller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC1A5551252ACCBE009E7A89 /* traveller.cpp */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		BC1A554D25297486009E7A89 /* flowField.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flowField.cpp; sourceTree = "<group>"; };
 		BC1A5550252974CB009E7A89 /* flowField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flowField.h; sourceTree = "<group>"; };
+		BC1A5551252ACCBE009E7A89 /* traveller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = traveller.cpp; sourceTree = "<group>"; };
+		BC1A5553252ACCD3009E7A89 /* traveller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = traveller.h; sourceTree = "<group>"; };
 		E42962AC2163EDD300A6A9E2 /* ofCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofCamera.cpp; path = ../../../libs/openFrameworks/3d/ofCamera.cpp; sourceTree = SOURCE_ROOT; };
 		E42962AD2163EDD300A6A9E2 /* ofMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofMesh.h; path = ../../../libs/openFrameworks/3d/ofMesh.h; sourceTree = SOURCE_ROOT; };
 		E42962AE2163EDD300A6A9E2 /* ofNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofNode.h; path = ../../../libs/openFrameworks/3d/ofNode.h; sourceTree = SOURCE_ROOT; };
@@ -538,6 +541,8 @@
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				BC1A554D25297486009E7A89 /* flowField.cpp */,
+				BC1A5551252ACCBE009E7A89 /* traveller.cpp */,
+				BC1A5553252ACCD3009E7A89 /* traveller.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -643,6 +648,7 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				BC1A554F25297486009E7A89 /* flowField.cpp in Sources */,
+				BC1A5552252ACCBE009E7A89 /* traveller.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,6 +694,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -786,6 +793,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -815,6 +823,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
