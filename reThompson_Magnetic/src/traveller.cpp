@@ -16,6 +16,7 @@ void traveller::set_size(int size_set) {
 }
 
 void traveller::initialize(float mspeed, float mforce) {
+    
     pos = ofVec2f(ofRandom(ofGetWidth()), ofRandom(ofGetHeight()));
     vel = ofVec2f(0, 0);
     acc = ofVec2f(0, 0);
@@ -57,3 +58,15 @@ void traveller::pathfind(flowField flows) {
     
     apply_force(steering_force);
 }
+
+void traveller::pathfind_90(flowField flows) {
+    ofVec2f applied_force = flows.lookup_force(pos);
+    ofVec2f perpendicular_force = applied_force.getRotatedRad(PI/2);
+    ofVec2f steering_force = perpendicular_force - vel;
+    
+    steering_force.x = ofClamp(steering_force.x, -max_force, max_force);
+    steering_force.y = ofClamp(steering_force.y, -max_force, max_force);
+    
+    apply_force(steering_force);
+}
+

@@ -21,6 +21,7 @@ class traveller {
         void apply_force(ofVec2f force);
         void move();
         void pathfind(flowField flows);
+        void pathfind_90(flowField flows);
     
     private:
         // Variables

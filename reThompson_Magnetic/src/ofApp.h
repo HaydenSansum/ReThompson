@@ -10,6 +10,7 @@ class ofApp : public ofBaseApp{
         void setup();
         void update();
         void draw();
+        void set_colors();
     
         void keyPressed(int key);
         void keyReleased(int key);
@@ -23,8 +24,16 @@ class ofApp : public ofBaseApp{
         void dragEvent(ofDragInfo dragInfo);
         void gotMessage(ofMessage msg);
         
+    // Physics objects
     flowField flowField;
     vector<traveller> travellers;
+    vector<traveller> off_travellers;
+    
+    // Colors
+    vector<ofColor> color_palette;
+    
+    // On Off Counter
+    int num_draw_cycles;
     
     // Screenshots
     ofImage img;
